@@ -15,7 +15,7 @@ def getpatience(request):
 
 
 @api_view(["GET"])
-def getpatience(request, pk):
+def get_a_patience(request, pk):
     data = Patients.objects.get(id=pk)
     serilizeData = PatiensSerializer(data, many=False)
 
@@ -30,7 +30,7 @@ def get_doctor(request):
 
 
 @api_view(["GET"])
-def get_doctor(request, pk):
+def get_a_doctor(request, pk):
     data = Doctors.objects.get(id=pk)
     serilizeData = DoctorsSerializer(data, many=False)
 
