@@ -1,7 +1,7 @@
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from .models import Patients, Doctors
-from .serializars import PatiensSerializer, DoctorsSerializer
+from .models import Patients, Doctors, Appointment
+from .serializars import PatiensSerializer, DoctorsSerializer, AppointmentSerializer
 
 
 # Create your views here.
