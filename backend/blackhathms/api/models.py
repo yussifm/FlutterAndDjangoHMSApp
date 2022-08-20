@@ -52,6 +52,7 @@ class Doctors(models.Model):
 
 
 class Appointment(models.Model):
+    id = models.AutoField(primary_key=True)
     patientId = models.PositiveIntegerField(null=True)
     doctorId = models.PositiveIntegerField(null=True)
     patientName = models.CharField(max_length=40, null=True)
